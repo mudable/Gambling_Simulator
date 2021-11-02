@@ -4,6 +4,7 @@ public class Gambling_Simulator {
 	/*
 	 * Initialized variable with given values, as start stake and bet. Added random
 	 * method to check win or loose. Function to calculate the amount of 20 days.
+	 * check luckiest day.
 	 */
 	public int startGambling() {
 		int startingAmount = 100;
@@ -32,10 +33,10 @@ public class Gambling_Simulator {
 			int result = startGambling();
 			amount_After_20Days += result;
 			if (result == 50) {
-				System.out.println("Lost 50$ in day " + i);
+				System.out.println(" Unlucky day Lost 50$ in day " + i);
 			}
 			if (result == 150) {
-				System.out.println("Won 50$ in day " + i);
+				System.out.println("Lucky day Won 50$ in day " + i);
 			}
 		}
 		System.out.println("Amount after 20 day is " + amount_After_20Days);
